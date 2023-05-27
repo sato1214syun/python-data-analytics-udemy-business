@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-data-analytics-udemy-business"
+version = "0.1.0"
+description = ""
+authors = ["sato1214syun <sato1214syun@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_data_analytics_udemy_business"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+notebook = "^6.5.4"
+numpy = "^1.24.3"
+pandas = "^2.0.1"
+scikit-learn = "^1.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
