@@ -1,21 +1,19 @@
-[tool.poetry]
+[project]
 name = "python-data-analytics-udemy-business"
 version = "0.1.0"
-description = ""
-authors = ["sato1214syun <sato1214syun@gmail.com>"]
+description = "Add a short description here"
+authors = [
+    { name = "sato1214syun", email = "sato1214syun@gmail.com" }
+]
+dependencies = ["numpy~=1.24.3", "pandas~=2.0.1", "seaborn~=0.12.2", "scikit-learn~=1.2.2", "matplotlib~=3.7.1", "notebook~=6.5.4"]
 readme = "README.md"
-packages = [{include = "python_data_analytics_udemy_business"}]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-notebook = "^6.5.4"
-numpy = "^1.24.3"
-pandas = "^2.0.1"
-scikit-learn = "^1.2.2"
-seaborn = "^0.12.2"
-matplotlib = "^3.7.1"
-
+requires-python = ">= 3.8"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+[tool.hatch.metadata]
+allow-direct-references = true
